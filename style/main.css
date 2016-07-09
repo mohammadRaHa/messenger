@@ -1,0 +1,201 @@
+/*//////////////////////////////////////////////Reset///////////////////////////////////////////////*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section {
+    display: block;
+}
+/*//////////////////////////////////////////////Nation///////////////////////////////////////////////*/
+*{
+    direction: rtl;
+}
+body{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-family: "B Yekan";
+}
+pre{
+    white-space: pre-wrap;       /* css-3 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;
+}
+/*//////////////////////////////////////////////Header///////////////////////////////////////////////*/
+header#mainHeader{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 7%;
+    min-height: 42px;
+    background-color: rgba(212, 100, 235, 1);
+    z-index: 99999;
+}
+#profile{
+    margin: 0.5% 2% 0 0;
+    float: right;
+    font: 500 200% "B Yekan";
+    color: #ffffff;
+}
+#profile img#userProfileImg{
+    height: 35px;
+    width: 35px;
+    padding: 1.5px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 1);
+}
+span.sendTime{
+    direction: ltr;
+}
+/*//////////////////////////////////////////////Message///////////////////////////////////////////////*/
+#message{
+    display: block;
+    position: absolute;
+    top: 7%;
+    left: 0;
+    width: 98%;
+    height: 86%;
+    padding: 0 1%;
+    overflow-y: auto;
+}
+section.msg{
+    width: 100%;
+    clear: both;
+    margin: 10px 0;
+    font-size: 120%;
+}
+/*////////////////////////////////////////////Other Message////////////////////////////////////////////*/
+section.otherMsg{
+    width: 60%;
+    float: left;
+    margin: 10px 0;
+}
+section.otherMsg img.profile{
+    width: 35px;
+    height: 35px;
+    float: left;
+    margin-bottom: 0.5%;
+    padding: 0.5%;
+    border-radius: 50%;
+    background-color: aquamarine;
+}
+section.otherMsg article.otherMsgBox{
+    float: left;
+    clear: both;
+    word-wrap: break-word;
+    word-break: break-all;
+    padding: 0.4% 1%;
+    background-color: rgba(58, 255, 248, 1);
+    border-radius: 0 10px 10px;
+}
+section.otherMsg article.otherMsgBox h1.senderName{
+    direction: ltr;
+    margin: 0.4% 2%;
+}
+section.otherMsg article.otherMsgBox p.msgContent{
+    word-wrap: break-word;
+    word-break: break-all;
+    font-size: 110%;
+    margin: 0.6% 2%;
+}
+section.otherMsg article.otherMsgBox input.reply{
+    border: none;
+    height: 25px;
+    width: 25px;
+    float: right;
+    background: transparent url("../media/reply.png");
+    background-position: 0 0;
+    background-size: cover;
+}
+section.otherMsg article.otherMsgBox span.sendTime{
+    float: left;
+}
+/*////////////////////////////////////////////Other Message////////////////////////////////////////////*/
+section.myMsg{
+    width: 60%;
+    float: right;
+    margin: 10px 0;
+    overflow: hidden;
+}
+section.myMsg article.myMsgBox{
+    width: auto;
+    float: right;
+    clear: both;
+    word-wrap: break-word;
+    word-break: break-all;
+    padding: 0.4% 1%;
+    background-color: rgba(199, 255, 113, 1);
+    border-radius: 10px 0 10px 10px;
+}
+section.myMsg article.myMsgBox p.msgContent{
+    font-size: 110%;
+    margin: 0.6% 2%;
+}
+section.myMsg article.myMsgBox input.option{
+    border: none;
+    height: 25px;
+    width: 25px;
+    float: right;
+    background: transparent url("../media/menu.png");
+    background-position: 0 0;
+    background-size: cover;
+}
+section.myMsg article.myMsgBox span.sendTime{
+    float: left;
+}
+/*//////////////////////////////////////////////Footer///////////////////////////////////////////////*/
+footer#mainFooter{
+    display: block;
+    position: absolute;
+    top: 93%;
+    left: 0;
+    width: 100%;
+    height: 7%;
+    min-height: 40px;
+    background-color: #A0A0A0;
+}
+footer#mainFooter input#msgTxt{
+    height: 100%;
+    width: 89%;
+    margin: 0;
+    padding: 0 1% 0 0;
+    float: left;
+    border: none;
+    background-color: #A0A0A0;
+    font-size: 150%;
+    color: #ffffff;
+    tab-index: 1;
+}
+footer#mainFooter input#sendBtn{
+    display: block;
+    height: 100%;
+    width: 10%;
+    padding: 0;
+    margin: 0;
+    float: right;
+    border: none;
+    background-color: rgba(60, 160, 255, 1);
+    font-size: 150%;
+    color: #ffffff;
+}
